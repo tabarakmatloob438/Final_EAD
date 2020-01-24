@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html
+
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+
+      xmlns:p="http://primefaces.org/ui"
+>
+
+
+<ui:include src="head.xhtml"></ui:include>
+
+<body>
+
+<ui:include src="navbar.xhtml"></ui:include>
+
+<h:form>
+<p:growl id="growl" life="2000" />
+
+<p:commandButton value="Add Student" id="add_student" update="growl" action="#{studentBean.gotoStudent}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+    <p:commandButton value="Add Course" id="add_course" update="growl" action="#{buttonView.buttonAction}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+    <p:commandButton value="Add registration" id="add_registration" update="growl" action="#{buttonView.buttonAction}" style="margin-right:20px;" styleClass="ui-priority-primary" />
+
+</h:form>
+</body>
+</html>
